@@ -34,6 +34,7 @@ module CarrierWave
       end
 
       def when_not_ready
+        raise ActiveRecord::RecordNotFound
       end
 
     end # Base
